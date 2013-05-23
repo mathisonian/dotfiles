@@ -1,4 +1,11 @@
-# Mathias’s dotfiles
+# Mathisonian's dotfiles
+
+## Useful iOS Applications
+
+* [iTerm2](http://www.iterm2.com/#/section/home)
+* [Sublime Text](http://www.sublimetext.com/2)
+* [Homebrew](http://mxcl.github.io/homebrew/)
+* [Spectacle](http://spectacleapp.com/)
 
 ## Installation
 
