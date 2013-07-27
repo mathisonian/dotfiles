@@ -1,8 +1,10 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin::$HOME/.rvm/bin:$PATH"
 export PATH="$PATH:$(rvm gempath)/bin/"
+export PATH=$PATH:/usr/local/sbin
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+[[ -s /Users/mpconlen/.nvm/nvm.sh ]] && . "$HOME/.nvm/nvm.sh" # This loads NVM
 
 alias ruff="DJANGO_LOCAL=True python manage.py runserver"
 alias syncdb="DJANGO_LOCAL=True python manage.py syncdb"
