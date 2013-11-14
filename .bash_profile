@@ -2,6 +2,8 @@
 export PATH="$HOME/bin::$HOME/.rvm/bin:$PATH"
 export PATH="$PATH:$(rvm gempath)/bin/"
 export PATH=$PATH:/usr/local/sbin
+PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 [[ -s /Users/mpconlen/.nvm/nvm.sh ]] && . "$HOME/.nvm/nvm.sh" # This loads NVM
@@ -16,6 +18,7 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 	[ -r "$file" ] && source "$file"
 done
 unset file
+unset MAILCHECK
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
