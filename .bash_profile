@@ -4,7 +4,6 @@ export PATH=$PATH:/usr/local/sbin
 PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 [[ -s /Users/mpconlen/.nvm/nvm.sh ]] && . "$HOME/.nvm/nvm.sh" # This loads NVM
 
 alias ruff="DJANGO_LOCAL=True python manage.py runserver"
